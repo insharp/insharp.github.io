@@ -1,0 +1,144 @@
+---
+---
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+html,body{
+  font-family: 'Montserrat', sans-serif;
+}
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+body{
+  padding-bottom: 250px;
+padding-top: 60px;
+}
+.site-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fc6e00;
+  display: flex;
+  justify-content: space-between;
+  .site-title {
+    display: flex;
+    color: #777777 !important;
+    &:hover{
+      text-decoration: none;
+    }
+    .site-logo {
+      width: 200px;
+      padding: 0 20px;
+      margin-right: 10px;
+      line-height: 60px;
+      background-color: #fff;
+      img {
+        width: 100%;
+      }
+    }
+    .site-title-text{
+      line-height: 60px;
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+  .site-nav{
+    .nav-trigger{
+      display: none;
+    }
+    .trigger{
+      ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+          a{
+            background-color: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            line-height: 32px;
+            font-size: 13px;
+            padding: 0 30px;
+            display: block;
+            line-height: 60px;
+          }
+          &.nav-last {
+              background-color: #529515;
+          }
+        }
+      }
+    }
+  }
+}
+
+.site-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    min-height: 190px;
+    background-color: #000;
+    text-align: center;
+    padding: 15px 0 0 0;
+    a{
+      color: #fff;
+    }
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .footer-heading{
+      color: #fff;
+      margin-top: 15px;
+    }
+    .social-media-list{
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      a{
+        padding: 10px 15px;
+        display: block;
+        font-size: 26px;
+      }
+    }
+    .copy-tag{
+      color: #fff;
+      font-size: 13px;
+    }
+    .u-email{
+      font-size: 15px;
+      color: #ffffff99;
+    }
+}
+
+.hd-header {
+    padding: 32px 0;
+    margin-bottom: 30px;
+    &.sub{
+      padding: 37px 0;
+      h1{
+        margin: 2px 0;
+        text-align: left;
+        font-size: 26px;
+        color: #162441;
+        font-weight: 800;
+      }
+    }
+    &.ash {
+        background-color: #fafafa;
+        color: #162441;
+    }
+    h1{
+        font-weight: 800;
+        margin: 0;
+        font-size: 3.5em;
+        text-align: center;
+    }
+}
