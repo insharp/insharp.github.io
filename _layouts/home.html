@@ -25,22 +25,37 @@ layout: default
   <!-- End of hd-header -->
 
     <div class="container">
-      <ul class="post-list">
+      <!-- post-list-group -->
+      <div class="post-list-group">
+
+
         {%- for post in site.posts -%}
-        <li>
+        <!-- post-content -->
+        <div class="post-content">
+
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
+
+          <h2 class="meadia-header">
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
-          </h3>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-        {%- endif -%}
-        </li>
+          </h2>
+          <div class="post-meta-date">
+            {%- if page.author -%}
+              • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+            {%- endif -%}
+            <span class="post-date">{{ post.date | date: date_format }}</span>
+          </div>
+
+              <!-- post-text-area -->
+              <div class="post-text-area">
+              {{ post.excerpt }}
+              </div><!-- End of post-text-area -->
+
+
+        </div><!-- End of post-content -->
         {%- endfor -%}
-      </ul>
+      </div><!-- End of post-list-group -->
 
       <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
