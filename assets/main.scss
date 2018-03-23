@@ -142,3 +142,43 @@ padding-top: 60px;
         text-align: center;
     }
 }
+.post-content{
+  margin-bottom: 30px;
+  .meadia-header{
+    font-weight: 800;
+    font-size: 22px;
+    color: #162441;
+    a{
+      color: inherit;
+    }
+  }
+  .post-meta-date{
+    color: #162441;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    .p-author{
+      margin-right: 15px;
+    }
+    .post-date{
+color: #757575;
+    }
+
+  }
+  .post-text-area{
+    color: #888;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    .post-link{
+      color: #fc6e00;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        &:hover {
+            color: #ca5d09;
+            text-decoration: none;
+        }
+      }
+  }
+}
