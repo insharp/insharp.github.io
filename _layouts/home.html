@@ -15,9 +15,7 @@ layout: default
     <!-- container -->
     <div class="container">
       <!-- hd-text -->
-      <div class="hd-text">
-        <h1>{{ page.list_title | default: "Blog" }}</h1>
-      </div>
+
       <!-- End of hd-text -->
     </div>
     <!-- End of container -->
@@ -49,7 +47,9 @@ layout: default
 
               <!-- post-text-area -->
               <div class="post-text-area">
-              {{ post.excerpt }}
+                {%- if post.excerpt -%}
+                  {{ post.excerpt | strip_html}} <a class="read-more" href="{{ post.url | relative_url }}">Read more...</a>
+                {%- endif -%}
               </div><!-- End of post-text-area -->
 
 
