@@ -36,13 +36,19 @@ layout: default
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
           <h2 class="meadia-header">
+           {%-if post.redirect_url-%}
+            <a class="post-link" href="{{ post.redirect_url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+            {% else %}
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
+            {%- endif -%}
           </h2>
           <div class="post-meta-date">
-            {%- if page.author -%}
-              • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+            {%- if post.author -%}
+              • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ post.author }}</span></span>
             {%- endif -%}
             <span class="post-date">{{ post.date | date: date_format }}</span>
           </div>

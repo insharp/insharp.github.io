@@ -4,6 +4,7 @@ title:  "Talking Trees"
 date:   2018-01-19 11:21:48 +0530
 categories: jekyll update
 post-image: http://talkingtrees.insharptechnologies.com/assets/img/banner3.jpg
+author: K.R. Samarasighe (CEO)
 
 short-note: Trees are living beings. The theory of plant ecology reveals the scientific knowledge of plant to plant interactions and interactions between plants and other organism. These interactions are done as hard to detect micro signals which are both in chemical and electrical form. They are transmitted within and between plant cells from receptor systems to effectors. Trees communicate with us but humans are unable to neither read nor understand their communication patterns.
 
