@@ -3,6 +3,7 @@ layout: post
 title:  "Artificial Intelligence is the New Electricity"
 date:   2019-12-15 11:21:48 +0530
 categories: ai
+author: Chamoda Pandithage
 ---
 
 > "Just as electricity transformed almost everything 100 years ago, today I actually have a hard time thinking of an industry that I don’t think AI will transform in the next several years" - Andrew Ng
